@@ -2,6 +2,11 @@ import XCTest
 @testable import SwiftRiemannSphere
 
 class swift_riemann_sphereTests: XCTestCase {
+  func testInit(){
+    assert(Complex(real: 0, imaginary: 1) == Complex.i)
+  }
+
+
   func testEquality() {
     let a = Complex(angle: 0, radius: 0)
     let b = Complex(angle: 2 * Double.pi, radius: 0)
