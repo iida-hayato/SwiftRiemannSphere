@@ -9,3 +9,5 @@ Complex.infinity == inf
 
 let zero = z/inf
 zero == 0
+
+Complex.exp(i * Double.pi)
