@@ -2,8 +2,9 @@ import XCTest
 @testable import SwiftRiemannSphere
 
 class swift_riemann_sphereTests: XCTestCase {
+  let i = Complex.i
   func testInit(){
-    assert(Complex(real: 0, imaginary: 1) == Complex.i)
+    assert(Complex(real: 0, imaginary: 1) == i)
   }
 
 
@@ -91,7 +92,7 @@ class swift_riemann_sphereTests: XCTestCase {
 
 
   func testEuler() {
-    let a      = Complex.exp(Complex.i * Complex(real: Double.pi, imaginary: 0))
+    let a      = Complex.exp(i * Double.pi)
     let expect = Complex(real: -1, imaginary: 0)
     // 精度不足
     // assert(a == expect)
