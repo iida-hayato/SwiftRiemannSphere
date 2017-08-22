@@ -48,8 +48,6 @@ class swift_riemann_sphereTests: XCTestCase {
   }
 
   func testInf() {
-    let a = Complex(angle: Double.pi / 4, radius: 1)
-    let b = Complex(angle: 0, radius: 1)
     let z = Complex(angle: Double.pi / 3, radius: 3)
 
     let inf = Complex.infinity
@@ -89,16 +87,13 @@ class swift_riemann_sphereTests: XCTestCase {
     // assert
     let expect = Complex.infinity
 
-    // 未実装
     assert(c == expect)
   }
 
 
   func testEuler() {
-    let a      = Complex.exp(i * Double.pi)
-    let expect = Complex(real: -1, imaginary: 0)
     // 精度不足
-    // assert(a == expect)
+    // assert(Complex.exp(i * Double.pi) == Complex(real: -1, imaginary: 0))
   }
 }
 

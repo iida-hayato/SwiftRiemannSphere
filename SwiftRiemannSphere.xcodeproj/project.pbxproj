@@ -26,7 +26,7 @@
 		0B2DCE571F4AC350008CBC40 /* SwiftRiemannSphere.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftRiemannSphere.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		OBJ_11 /* SwiftRiemannSphereTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftRiemannSphereTests.swift; sourceTree = "<group>"; };
 		OBJ_13 /* SwiftRiemannSphere.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftRiemannSphere.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_14 /* SwiftRiemannSphereTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = SwiftRiemannSphereTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_14 /* SwiftRiemannSphereTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = SwiftRiemannSphereTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_8 /* SwiftRiemannSphere.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftRiemannSphere.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,6 +138,14 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					OBJ_15 = {
+						LastSwiftMigration = 0900;
+					};
+					OBJ_22 = {
+						LastSwiftMigration = 0900;
+					};
+				};
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "SwiftRiemannSphere" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -202,6 +210,7 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
 				TARGET_NAME = SwiftRiemannSphere;
 			};
 			name = Debug;
@@ -223,6 +232,7 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
 				TARGET_NAME = SwiftRiemannSphere;
 			};
 			name = Release;
@@ -240,6 +250,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_VERSION = 4.0;
 				TARGET_NAME = SwiftRiemannSphereTests;
 			};
 			name = Debug;
@@ -257,6 +268,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_VERSION = 4.0;
 				TARGET_NAME = SwiftRiemannSphereTests;
 			};
 			name = Release;
