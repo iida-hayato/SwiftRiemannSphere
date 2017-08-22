@@ -73,9 +73,12 @@ class swift_riemann_sphereTests: XCTestCase {
     assert((0 * inf).isNan)
     assert((inf * 0).isNan)
     assert(inf * inf == inf)
-    assert(Complex.i / 0 == inf)
+    assert(i / 0 == inf)
     assert(z / 0 == inf)
+    assert(inf / 0 == inf)
     assert(1 / inf == 0)
+    assert(0 / z == 0)
+    assert(0 / inf == 0)
     assert((inf / inf).isNan)
   }
 
