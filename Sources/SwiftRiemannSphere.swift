@@ -127,7 +127,8 @@ public struct Complex: ComplexType, Complexable {
 
 extension Complex:CustomStringConvertible {
   public var description: String {
-    return "\(self.real) + \(self.imaginary)i"
+    let digit = pow(10.0, 10.0)
+    return "\(round(self.real * digit)/digit) + \(round(self.imaginary * digit)/digit) i"
   }
 }
 
