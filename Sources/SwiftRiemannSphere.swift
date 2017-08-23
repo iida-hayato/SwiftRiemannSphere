@@ -125,7 +125,10 @@ public struct Complex: ComplexType, Complexable {
 
 }
 
-extension Complex {
+extension Complex:CustomStringConvertible {
+  public var description: String {
+    return "\(self.real) + \(self.imaginary)i"
+  }
 }
 
 // Opelator
