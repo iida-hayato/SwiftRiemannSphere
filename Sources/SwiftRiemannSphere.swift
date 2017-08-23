@@ -236,7 +236,7 @@ extension Complex {
 
 // infinity
 extension Complex {
-  static public let infinity = Complex(angle: Double.infinity, radius: Double.infinity)
+  static public let infinity = Complex(angle: Double.nan, radius: Double.infinity)
   static public let nan      = Complex(angle: Double.nan, radius: Double.nan)
 
 }
